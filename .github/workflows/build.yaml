@@ -5,7 +5,7 @@ on:
   push:
     branches:
       - 'main'
-      - 'features/yt-dl-fix'
+      - 'features/fix-build-error'
   
 env:
   platforms: linux/amd64
