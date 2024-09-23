@@ -41,7 +41,12 @@ RUN <<EOF
     apk -U add build-base git
     npm install -g typescript
     git clone https://github.com/badaix/snapweb
-    make -C snapweb
+EOF
+
+RUN <<EOF
+    cd snapweb
+    npm ci
+    npm run build
 EOF
 
 # Final stage

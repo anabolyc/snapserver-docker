@@ -8,8 +8,7 @@ on:
       - 'features/fix-build-error'
   
 env:
-  platforms: linux/amd64
-   #,linux/arm64,linux/arm/v7
+  platforms: linux/amd64,linux/arm64,linux/arm/v7,linux/arm/v6
 
 jobs:
   docker:
