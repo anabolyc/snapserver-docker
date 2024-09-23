@@ -61,8 +61,8 @@ RUN <<EOF
         flac \
         libvorbis \
         opus \
-        soxr
-
+        soxr \
+        libstdc++
 EOF
 
 COPY --from=compiler snapcast/bin/snapserver /usr/local/bin/

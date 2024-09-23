@@ -1,1 +1,1 @@
-andreymalyshenko/snapcast-docker:latest
+andreymalyshenko/snapserver:latest
