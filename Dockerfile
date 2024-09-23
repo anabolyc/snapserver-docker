@@ -2,7 +2,7 @@
 ARG ALPINE_BASE="3.20"
 
 # SnapCast build stage
-FROM alpine:${ALPINE_BASE} as compiler
+FROM alpine:${ALPINE_BASE} AS compiler
 RUN <<EOF
     apk -U add \
     alsa-lib-dev \
@@ -35,7 +35,7 @@ RUN <<EOF
 EOF
 
 # SnapWeb build stage
-FROM node:alpine as snapweb
+FROM node:alpine AS snapweb
 
 RUN <<EOF
     apk -U add build-base git
