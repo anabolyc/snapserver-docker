@@ -1,5 +1,5 @@
-# Install SnapServer on minimal OS - script v4.0.1 [2022-03-30]
-ARG ALPINE_BASE="3.15"
+# Install SnapServer on minimal OS
+ARG ALPINE_BASE="3.20"
 
 # SnapCast build stage
 FROM alpine:${ALPINE_BASE} as compiler
@@ -46,7 +46,7 @@ EOF
 
 # Final stage
 FROM alpine:${ALPINE_BASE}
-LABEL maintainer="Saiyato"
+LABEL maintainer="andriy@sonocotta.com"
 
 RUN <<EOF
     apk add --no-cache \
